@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Corporate Business Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  
 </head>
 <body>
 
-<!-- Navigation -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">COMPANY NAME</a>
-    <div class="collapse navbar-collapse">
+    <a class="navbar-brand fw-bold text-primary" href="#">COMPANY NAME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
@@ -22,67 +24,110 @@
         <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
-      <a class="btn btn-primary ms-3" href="#">Get a Quote</a>
+      <a class="btn btn-outline-primary ms-3" href="#">Sign In</a>
+      <a class="btn btn-primary ms-2" href="#">Get a Quote</a>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="bg-light text-center p-5">
-  <div class="container">
-    <h1>Your Trusted Partner in Business Success</h1>
-    <p>We help you achieve your goals with innovative solutions.</p>
-    <a href="#" class="btn btn-primary">Get Started</a>
-    <a href="#" class="btn btn-outline-secondary">Learn More</a>
+<!-- Hero -->
+<section class="py-5 bg-light">
+  <div class="container d-flex align-items-center">
+    <div class="col-md-6">
+      <h1>Your Trusted Partner in Business Success</h1>
+      <p>We help you achieve your goals with innovative solutions.</p>
+      <a href="#" class="btn btn-primary">Get Started</a>
+      <a href="#" class="btn btn-outline-secondary">Learn More</a>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="https://picsum.photos/500/300" class="img-fluid rounded" alt="Business">
+    </div>
   </div>
 </section>
 
 <!-- Services -->
-<section class="container py-5">
-  <h2 class="text-center mb-4">Our Services</h2>
-  <div class="row">
-    <div class="col-md-4 text-center">
-      <img src="https://picsum.photos/100" class="mb-3" alt="Service">
-      <h5>Business Consulting</h5>
-      <p>Expert advice to drive growth.</p>
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://picsum.photos/100" class="mb-3" alt="Consulting">
+        <h5>Business Consulting</h5>
+        <p>Expert advice to drive growth.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/101" class="mb-3" alt="Finance">
+        <h5>Financial Solutions</h5>
+        <p>Tailored financial strategies.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://picsum.photos/102" class="mb-3" alt="Market">
+        <h5>Market Analysis</h5>
+        <p>In-depth industry insights.</p>
+      </div>
     </div>
-    <div class="col-md-4 text-center">
-      <img src="https://picsum.photos/101" class="mb-3" alt="Service">
-      <h5>Financial Solutions</h5>
-      <p>Tailored financial strategies.</p>
+  </div>
+</section>
+
+<!-- About -->
+<section class="py-5 bg-light">
+  <div class="container d-flex align-items-center">
+    <div class="col-md-6">
+      <h2>About Our Company</h2>
+      <p>Delivering Excellence in Every Project. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <a href="#" class="btn btn-primary">Learn More About Us</a>
     </div>
-    <div class="col-md-4 text-center">
-      <img src="https://picsum.photos/102" class="mb-3" alt="Service">
-      <h5>Market Analysis</h5>
-      <p>In-depth industry insights.</p>
+    <div class="col-md-6 text-center">
+      <img src="https://picsum.photos/400/250" class="img-fluid rounded" alt="Team">
     </div>
   </div>
 </section>
 
 <!-- Projects -->
-<section class="container py-5">
-  <h2 class="text-center mb-4">Our Recent Projects</h2>
-  <div class="row">
-    <div class="col-md-4"><img src="https://picsum.photos/300/200" class="img-fluid" alt="Project"></div>
-    <div class="col-md-4"><img src="https://picsum.photos/301/200" class="img-fluid" alt="Project"></div>
-    <div class="col-md-4"><img src="https://picsum.photos/302/200" class="img-fluid" alt="Project"></div>
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Our Recent Projects</h2>
+    <div class="row">
+      <div class="col-md-4"><img src="https://picsum.photos/300/200" class="img-fluid mb-2" alt="Project"><p>Corporate Strategy</p></div>
+      <div class="col-md-4"><img src="https://picsum.photos/301/200" class="img-fluid mb-2" alt="Project"><p>Investment Solutions</p></div>
+      <div class="col-md-4"><img src="https://picsum.photos/302/200" class="img-fluid mb-2" alt="Project"><p>Market Research</p></div>
+    </div>
   </div>
 </section>
 
 <!-- Testimonials -->
-<section class="bg-light py-5">
+<section class="py-5 bg-light">
   <div class="container text-center">
     <blockquote class="blockquote">
-      <p>"Exceptional service and outstanding results. Highly recommend!"</p>
+      <p>“Exceptional service and outstanding results. Highly recommend!”</p>
       <footer class="blockquote-footer">John Smith, CEO of Tech Innovations</footer>
     </blockquote>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="bg-dark text-white p-4">
-  <div class="container text-center">
-    <p>© 2026 Company Name. All rights reserved.</p>
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li>Home</li><li>About Us</li><li>Services</li><li>Blog</li><li>Contact</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p>Email: info@company.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Follow Us</h5>
+        <p>Facebook | Twitter | LinkedIn</p>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      © 2026 Company Name. All rights reserved.
+    </div>
   </div>
 </footer>
 
